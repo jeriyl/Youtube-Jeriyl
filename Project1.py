@@ -183,7 +183,7 @@ def playlist_details(channel_id):
 
     return(playlist_datas)
 
-client=pymongo.MongoClient('mongodb+srv://jeriyl94:atlas12345@youtubedataharvestingwa.oppgas0.mongodb.net/')
+client=pymongo.MongoClient('mongodb+srv://jeriyl94:atlas12345@youtubedataharvestingwa.oppgas0.mongodb.net/',serverSelectionTimeoutMS=5000)
 db=client["Utube"]
 collection=db["Utube Details"]
 
